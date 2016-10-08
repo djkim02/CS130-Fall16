@@ -7,7 +7,8 @@
  * Air Traffic Controller controls all of the incoming flights and make
  * sure the runway is open for landing. All of the incoming flights 
  * communicates to the ATC and ATC communicates to runway. Incoming flights
- * and runway never directly communicates.
+ * and runway never directly communicates. Assume that this airport is small
+ * and has only one runway.
  *
  */
 
@@ -28,7 +29,7 @@ public interface Mediator {
 public class AirTrafficController implements Mediator {
 	private Arraylist<Flight> flights = new ArrayList();
 	private Runway runway;
-	public boolean isLandingOk;
+	private boolean isLandingOk;
 
 	public void addRunway(Runway runway) {
 		this.runway = runway;

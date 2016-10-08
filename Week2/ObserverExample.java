@@ -55,6 +55,6 @@ public class FacebookGroupPost implements FacebookPost {
 public class FacebookGroupMember implements FacebookUser {
 	public void update(String message) {
 		// You got a new notification! Notification bar has been updated
-		System.out.println("Not cleared to land. Waiting for the clear");
+		System.out.println("New notification received: " + message);
 	}
 }

@@ -23,7 +23,7 @@ public class Mario {
 	}
 
 	public void performJump() {
-		jumpStrategy.attack();
+		jumpStrategy.jump();
 	}
 
 	public void performAttack() {
